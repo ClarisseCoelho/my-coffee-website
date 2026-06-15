@@ -1,7 +1,8 @@
 body {
-  background-image: url("Images/vintage-surface.jpg");
+  background-image: url(Images/library_books.avif);
+  background-size: cover;
   font-family: sans-serif;
-  padding: 20px;
+  padding: 10px;
 }
 
 h1 {
@@ -18,24 +19,64 @@ h2 {
   font-style: italic;
 }
 
-h1, h2, p {
+h1{
+  text-align: center;
+  font-family: Impact, serif;
+
+}
+
+h2,h3{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+
+}
+
+p{
   text-align: center;
 }
 
-.menu {
-  width: 80%;
-  background-color: burlywood;
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  max-width: 800px; 
+  margin: 0 auto;  
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.posterCover {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out; /* transition effect */
+}
+
+.posterCover:hover {
+  transform: scale(1.05);
+}
+
+.reviewBody {
+  width: 75%;
+  background-color: #efe4d6;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  max-width: 500px;
+  max-width: 2300px;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -25px
 }
 
 hr {
@@ -46,10 +87,6 @@ hr {
 
 .bottom-line {
   margin-top: 25px;
-}
-
-h1, h2 {
-  font-family: Impact, serif;
 }
 
 .item p {
