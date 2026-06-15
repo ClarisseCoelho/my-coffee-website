@@ -1,5 +1,6 @@
 body {
   background-image: url("Images/vintage-surface.jpg");
+  background-size: cover;
 }
 
 h1, h2, p {
